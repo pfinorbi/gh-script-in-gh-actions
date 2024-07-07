@@ -22,7 +22,7 @@ jobs:
       with:
         script: |
             github.rest.projects.createCard({
-              column_id: {{columnID}},
+              column_id: "To triage",
               note: "Issue added",
               content_id: context.payload.issue.id,
               content_type: "Issue",
